@@ -7,12 +7,15 @@
 //
 
 #import "AFAppDelegate.h"
+#import <JsonParsing/JsonParsing.h>
 
 @implementation AFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [JsonParsing.sharedInstance showRootViewController:self.window];
     return YES;
 }
 

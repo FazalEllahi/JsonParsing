@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - JSONModel (1.8.0)
+  - JsonParsing (0.1.0):
+    - AFNetworking (~> 2.3)
+    - JSONModel
+
+DEPENDENCIES:
+  - JsonParsing (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - JSONModel
+
+EXTERNAL SOURCES:
+  JsonParsing:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  JsonParsing: 59bfa5f7d0735e3260bf46fe81003f373f13a6b2
+
+PODFILE CHECKSUM: 63099d06f6f0655f9a5bc1cdcb7fb1c82f2d23ab
+
+COCOAPODS: 1.11.3

@@ -60,11 +60,11 @@
 		7C508768FC79DA2DF6FEC1C8 /* Pods-JsonParsing_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonParsing_Example.release.xcconfig"; path = "Target Support Files/Pods-JsonParsing_Example/Pods-JsonParsing_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3EA9E796B275A6CD52BAF3 /* Pods_JsonParsing_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonParsing_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4179E0AF81E138A78EED20F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A4179E0AF81E138A78EED20F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AD0BEE5974500E1510DFD78E /* Pods_JsonParsing_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonParsing_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B31F614C484424C60198E4B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B31F614C484424C60198E4B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C92359532AC527F16CC00B74 /* Pods-JsonParsing_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonParsing_Example.debug.xcconfig"; path = "Target Support Files/Pods-JsonParsing_Example/Pods-JsonParsing_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CEDD2A2F436FC850201BFE0F /* JsonParsing.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JsonParsing.podspec; path = ../JsonParsing.podspec; sourceTree = "<group>"; };
+		CEDD2A2F436FC850201BFE0F /* JsonParsing.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JsonParsing.podspec; path = ../JsonParsing.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E12E8F71D87A66A4B5B4D3AB /* Pods-JsonParsing_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonParsing_Tests.release.xcconfig"; path = "Target Support Files/Pods-JsonParsing_Tests/Pods-JsonParsing_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FEBC535FB73B657DD118DF3E /* Pods-JsonParsing_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonParsing_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JsonParsing_Tests/Pods-JsonParsing_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				FEBC535FB73B657DD118DF3E /* Pods-JsonParsing_Tests.debug.xcconfig */,
 				E12E8F71D87A66A4B5B4D3AB /* Pods-JsonParsing_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JsonParsing_Example/Pods-JsonParsing_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/JsonParsing/JsonParsing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JsonParsing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

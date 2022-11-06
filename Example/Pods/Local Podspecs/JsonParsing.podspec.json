@@ -1,0 +1,36 @@
+{
+  "name": "JsonParsing",
+  "version": "0.1.0",
+  "summary": "A short description of JsonParsing.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/FazalEllahi/JsonParsing",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "FazalEllahi": "fazzalellahi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/FazalEllahi/JsonParsing.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "JsonParsing/Classes/**/*",
+  "resource_bundles": {
+    "JsonParsingBundle": [
+      "JsonParsing/Assets/*.{xib,storyboard,xcassets,png,json}",
+      "JsonParsing/Classes/**/*.{xib,storyboard,xcassets,png}"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "JSONModel": [
+
+    ]
+  }
+}
