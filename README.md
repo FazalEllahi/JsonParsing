@@ -27,3 +27,5 @@ FazalEllahi, fazzalellahi@gmail.com
 ## License
 
 JsonParsing is available under the MIT license. See the LICENSE file for more info.
+
+##cocoapods https://gist.github.com/ccabanero/e792492221c5347a4d4f
